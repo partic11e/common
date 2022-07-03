@@ -7,14 +7,14 @@
 <p align="center">
   <!-- Update log -->
   <img alt="partic11e logo" height="70" src="https://raw.githubusercontent.com/partic11e/.github/main/profile/img/logotype.svg" />
-  <strong>{{packageName}}</strong>
+  <strong>common</strong>
 </p>
 
 <p align="center">
   partic11e is a collection of easy-to-use utility and feature libraries for creating anything you want with the <a href="https://deno.land">Deno</a> runtime.
 </p>
 
-<h1 align="center">partic11e - {{packageName}}</h1>
+<h1 align="center">partic11e - common</h1>
 
 <p align="center">
   <!-- @TODO Package description -->
@@ -25,21 +25,21 @@
 </p>
 
 <p align="center">
-  <sub>Built with ❤ by integer11 and <a href="https://github.com/partic11e/{{packageName}}/graphs/contributors">contributors</a></sub>
+  <sub>Built with ❤ by integer11 and <a href="https://github.com/partic11e/common/graphs/contributors">contributors</a></sub>
 </p>
 
 <p align="center">
-  <a href="https://github.com/partic11e/{{packageName}}/blob/main/CODE_OF_CONDUCT.md">
+  <a href="https://github.com/partic11e/common/blob/main/CODE_OF_CONDUCT.md">
     <img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=flat-square" />
   </a>
-  <a href="https://github.com/partic11e/{{packageName}}/commits">
-    <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/partic11e/{{packageName}}?style=flat-square">
+  <a href="https://github.com/partic11e/common/commits">
+    <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/partic11e/common?style=flat-square">
   </a>
-  <a href="https://github.com/partic11e/{{packageName}}/releases">
-    <img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/partic11e/{{packageName}}?style=flat-square" />
+  <a href="https://github.com/partic11e/common/releases">
+    <img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/partic11e/common?style=flat-square" />
   </a>
-  <a href="https://github.com/partic11e/{{packageName}}/issues">
-    <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/partic11e/{{packageName}}?style=flat-square">
+  <a href="https://github.com/partic11e/common/issues">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/partic11e/common?style=flat-square">
   </a>
 </p>
 
@@ -65,7 +65,7 @@ To install, you simply need to re-export the library features with your `./deps.
 
 ```ts
 // ./deps.ts
-export * from "https://denopkg.com/partic11e/{{packageName}}/mod.ts";
+export * from "https://denopkg.com/partic11e/common/mod.ts";
 //  or specific features
 ```
 
@@ -82,19 +82,19 @@ You can specify a specific branch or release to re-export:
 **Export from a specific branch**
 
 ```ts
-export * from "https://denopkg.com/partic11e/{{packageName}}@dev-fix-06145/mod.ts";
+export * from "https://denopkg.com/partic11e/common@dev-fix-06145/mod.ts";
 ```
 
 **Export from a specific release**
 
 ```ts
-export * from "https://denopkg.com/partic11e/{{packageName}}@0.1.0-alpha/mod.ts";
+export * from "https://denopkg.com/partic11e/common@0.1.0-alpha/mod.ts";
 ```
 
 **Export the latest release**
 
 ```ts
-export * from "https://denopkg.com/partic11e/{{packageName}}@latest/mod.ts";
+export * from "https://denopkg.com/partic11e/common@latest/mod.ts";
 ```
 
 > **Note:** If no branch or tag is specified in the re-export, then it will pull from the main branch, which we only merge into when preparing a release.\
@@ -131,7 +131,7 @@ The MIT License (MIT) 2022 integer11. Refer to [LICENSE][license] for details.
 </p>
 
 [deno]: https://deno.land "Deno homepage"
-[branches]: https://github.com/partic11e/{{packageName}}/branches "partic11e/{{packageName}} branches on GitHub"
-[releases]: https://github.com/partic11e/{{packageName}}/releases "partic11e/{{packageName}} releases on GitHub"
-[contributing]: https://github.com/partic11e/{{packageName}}/blob/main/CONTRIBUTING.md "partic11e/{{packageName}} contributing guidelines"
-[license]: https://github.com/partic11e/{{packageName}}/blob/main/LICENSE "partic11e/{{packageName}} license"
+[branches]: https://github.com/partic11e/common/branches "partic11e/common branches on GitHub"
+[releases]: https://github.com/partic11e/common/releases "partic11e/common releases on GitHub"
+[contributing]: https://github.com/partic11e/common/blob/main/CONTRIBUTING.md "partic11e/common contributing guidelines"
+[license]: https://github.com/partic11e/common/blob/main/LICENSE "partic11e/common license"

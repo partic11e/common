@@ -8,7 +8,11 @@
  */
 
 //#region feature-exports
-import { dirname, relative, resolve } from "https://deno.land/std@0.145.0/path/mod.ts";
+import {
+  dirname,
+  relative,
+  resolve,
+} from "https://deno.land/std@0.145.0/path/mod.ts";
 //#endregion
 
 //#region type-imports
@@ -66,7 +70,11 @@ const _execute = async (): Promise<void> => {
  * @param packageName The name of the package.
  * @param outDir The directory to write the file to.
  */
-const _processFile = async (file: string, packageName: string, outDir: string): Promise<void> => {
+const _processFile = async (
+  file: string,
+  packageName: string,
+  outDir: string,
+): Promise<void> => {
   const data = await Deno.readFile(file);
   const str = DEC.decode(data);
   const out = str.replace(/\{\{packageName\}\}/g, packageName);
@@ -84,7 +92,11 @@ const _processFile = async (file: string, packageName: string, outDir: string): 
  * @param packageName The name of the package.
  * @param outDir The directory to write the files to.
  */
-const _processFiles = async (files: string[], packageName: string, outDir: string): Promise<void> => {
+const _processFiles = async (
+  files: string[],
+  packageName: string,
+  outDir: string,
+): Promise<void> => {
   for await (const file of files) {
     await _processFile(file, packageName, outDir);
   }
@@ -95,7 +107,9 @@ const _processFiles = async (files: string[], packageName: string, outDir: strin
  *
  * @param permission The permission to check.
  */
-const _checkPermission = async (permission: Deno.PermissionDescriptor): Promise<void> => {
+const _checkPermission = async (
+  permission: Deno.PermissionDescriptor,
+): Promise<void> => {
   const query = await Deno.permissions.query(permission);
 
   if (query.state !== "granted") {
@@ -113,7 +127,9 @@ const _checkPermission = async (permission: Deno.PermissionDescriptor): Promise<
  *
  * @param permissions The permissions to check and request.
  */
-const _checkPermissions = async (permissions: Deno.PermissionDescriptor[]): Promise<void> => {
+const _checkPermissions = async (
+  permissions: Deno.PermissionDescriptor[],
+): Promise<void> => {
   for (const permission of permissions) {
     await _checkPermission(permission);
   }
